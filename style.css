@@ -19,9 +19,15 @@ img {
     border-bottom: 2px solid rgb(93, 238, 243);
     padding: 1rem;*/
     margin: 1rem;
+    font-family: Playfair Display, serif;
+}
+body {
+  background-color: #fcfcfc;
+  font-family: Poppins, sans-serif;
 }
 .border-bottom {
-    border-bottom: 2px solid rgb(93,238,243);
+    border-bottom: 1px solid #c6a75e;
+    opacity: 0.4;
 }
 .search {
     display: flex;
@@ -33,13 +39,16 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(5, 158, 158);
+    color: #0b0b0b;
     font-weight: bold;
     border: none;
     cursor: pointer;
+    background-color: #c6a75e;
 }
 .logo {
-    color: rgb(26, 216, 216);
+    color: #c6a75e;
+    font-size: 28px;
+    letter-spacing: 2px;
     margin-bottom: -2rem;
     margin-left: 2rem;
 }
@@ -53,26 +62,39 @@ img {
 main > h2 {
     text-align: center;
     margin: 1rem 0;
+    color: #c6a75e;
 }
 .products {
-    background-color: rgb(113, 224, 252,0.2);
-    padding: 1rem;
-    border-radius: 7px;
+    background-color: #1c1c1c;
+    padding: 2rem;
     width: 250px;
     box-shadow: 1px 1px 1px rgb(113,224,252,0.5);
+    border: 1px solid #c6a75e;
+    transition: transform 0.3s ease;
 }
 .products-button {
     cursor: pointer;
     border: none;
     width: 100%;
-    padding: 10px;
-    border-radius: 7px;
-    color: rgb(255, 255, 255);
+    padding: 12px;
+    letter-spacing: 1px;
+    color: #0b0b0b;
     font-size: 15px;
     font-weight: bold;
-    background-color: rgb(2, 128, 128);
+    background-color: #c6a75e;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease;
+}
+.products-button:hover {
+  background-color: #e0c37a;
+  transform: scale(1.03);
+}
+.products p:first-of-type {
+  color: white;
+  font-family: Playfair Display, serif;
+  font-size: 18px;
+  margin-top: 10px;
 }
 .products-button::before {
     content: "";
@@ -81,7 +103,7 @@ main > h2 {
     left: -100%;       
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #f39c12, #e74c3c);
+    background: linear-gradient(to right, #f8d37b);
     z-index: 0;
     transition: left 0.5s;
 }
@@ -96,11 +118,12 @@ main > h2 {
 }
 .product-images {
     height: 230px;
-    object-fit: cover;
-    margin-bottom: .30rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
 }
 .margin-onerem {
-    margin: .75rem 0;
+    color: #c6a75e;
+    font-weight: 600;
 }
 
 @keyframes hvr-bob {
